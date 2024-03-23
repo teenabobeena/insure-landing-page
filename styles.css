@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--very-dark-violet);
+  height: 100vh;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  overflow: hidden;
+}
+
+nav img {
+    position: absolute;
+    left: -4px;
+    bottom: 145px;
+    scale: 1.2;
+}
+
+.nav-link {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button {
+  width: 48%;
+  background-color: var(--dark-violet);
+  border: 2px solid var(--very-light-gray);
+  color: var(--very-light-gray);
+  padding: 0.65em;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 0.9em;
+}
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+}
+
+hr {
+  width: 40%;
+  color: var(--very-light-gray);
+}
+
+main {
+  text-align: center;
+  padding: 0 1.8em;
+}
+
+ul {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--very-light-gray);
+}
+
+h4 {
+    font-family: "Karla", sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 2;
+    color: var(--dark-grayish-violet);
+    margin-bottom: 2em;
+}
+
+.body-font {
+    font-size: 16px;
+}
+
+.paragraph-color {
+    color: var(--dark-grayish-violet);
+    line-height: 1.5;
+}
+
+.karla-regular {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-bold {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.dm-serif {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-spacing {
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    height: 40px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--very-dark-violet);
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.menu img {
+    position: absolute;
+    bottom: 170px;
+}
+
+.open {
+    display: block;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -4px;
+}
+
+.hero {
+    color: var(--very-light-gray);
+    background-color: var(--dark-violet);
+    padding: 4em 1.8em;
+    margin-bottom: 7em;
+    position: relative;
+    text-align: center;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid black;
+    align-self: center;
+}
+
+.bar {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.4s ease;
+}
+
+.bar:nth-child(1) {
+    top: 8px;
+    left: 7px;
+}
+
+.bar:nth-child(2) {
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+}
+
+.bar:nth-child(3) {
+    bottom: 8px;
+    left: 7px;
+}
+
+.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.plan-btn {
+    background-color: var(--very-dark-violet);
+}
+
+h2:first-of-type {
+    font-size: 3em;
+    margin-bottom: 1.75em;
+}
+
+#logo {
+    width: auto;
+    height: 18px;
+}
+
+.snappy > h3:nth-child(2) {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.affordable > h3:nth-child(2),
+.people > h3:nth-child(2) {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.affordable img,
+.people img {
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+}
+
+.about {
+    background-color: var(--dark-violet);
+    color: var(--very-light-gray);
+    padding: 2em 1em;
+    text-align: center;
+    height: 300px;
+    line-height: 50px;
+    margin: 8em 1.5em 9em 1.5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.about img {
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 0.8em;
+}
+
+.company, .help,
+.contact, .other {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--dark-violet);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.other {
+    margin-bottom: 4em;
+}
+
+.footer {
+    background: var(--very-light-gray) url("./images/bg-pattern-footer-mobile.svg") no-repeat;
+    height: 7.5em;
+    padding-top: 5.5em;
+}
+
+.footer img {
+    margin-bottom: 2em;
+}
+
+.social-links {
+    display: flex;
+    width: 45%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#footer-rule {
+    width: 90%;
+    margin: 0 1em 1em 1em;
+}
+
+#logo {
+    align-self: center;
+}
+
+#intro-right {
+    position: absolute;
+    bottom: -44%;
+    right: 0;
+}
+
+#intro-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about-btn {
+    width: 56%;
+}
