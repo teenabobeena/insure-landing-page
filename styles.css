@@ -91,9 +91,9 @@ h4 {
     font-family: "Karla", sans-serif;
     font-size: 0.9em;
     font-weight: 700;
-    letter-spacing: 2;
+    letter-spacing: 1px;
     color: var(--dark-grayish-violet);
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .body-font {
@@ -168,7 +168,7 @@ h4 {
 .hero {
     color: var(--very-light-gray);
     background-color: var(--dark-violet);
-    padding: 4em 1.8em;
+    padding: 4em 1.8em 6em 1.8em;
     margin-bottom: 7em;
     position: relative;
     text-align: center;
