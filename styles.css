@@ -152,8 +152,7 @@ h4 {
 
 .menu img {
     position: absolute;
-    bottom: 150px;
-    z-index: 0;
+    bottom: 200px;
 }
 
 .open {
