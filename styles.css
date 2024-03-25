@@ -93,7 +93,7 @@ h4 {
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--dark-grayish-violet);
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 
 .body-font {
@@ -148,11 +148,13 @@ h4 {
     padding-top: 50px;
     padding-left: 0;
     text-align: center;
+    z-index: 1;
 }
 
 .menu img {
     position: absolute;
-    bottom: 170px;
+    bottom: 0;
+    z-index: 0;
 }
 
 .open {
@@ -266,12 +268,15 @@ h2:first-of-type {
     position: absolute;
     top: 0;
     right: 1px;
+    z-index: 0;
 }
 
 .about h2 {
     font-size: 2.5em;
     line-height: 1;
     margin-bottom: 0.8em;
+    position: relative;
+    z-index: 1;
 }
 
 .company, .help,
